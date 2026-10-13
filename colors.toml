@@ -1,0 +1,65 @@
+# Yakiiro — Omarchy
+# 焼き色: temper colors of steel. Dark forge.
+# Ground is a near-black shop floor (brown + purple charcoal).
+# Accent is 590°F temper blue. Body text is 350°F pale straw.
+# Traffic lights stay inside the scale: hotter brown, straw, greened teal.
+
+mode = "dark"
+
+# Jewelry — 590°F temper blue, punched just enough to read on charcoal
+accent = "#4A8AB0"
+cursor = "#4A8AB0"
+selection = "#2A2438"
+muted = "#7A7368"
+
+# Surfaces — shop floor, not a raw coupon
+background = "#14131A"
+dark_background = "#0C0B10"
+darker_background = "#08070A"
+lighter_background = "#221F2A"
+
+# Text — 350°F pale straw on charcoal
+foreground = "#C4C1B8"
+dark_foreground = "#7A7368"
+light_foreground = "#D4D0C6"
+bright_foreground = "#E4E0D6"
+selection_foreground = "#E4E0D6"
+selection_background = "#2A2438"
+
+# Named / semantic — recast traffic lights in scale
+red = "#9A4A32"
+green = "#5A8A7A"
+yellow = "#C4B48A"
+blue = "#386385"
+magenta = "#5A5A8A"
+cyan = "#809EA6"
+orange = "#A08F73"
+brown = "#73553D"
+
+bright_red = "#B86248"
+bright_green = "#6A9A8A"
+bright_yellow = "#D4C49A"
+bright_blue = "#4A8AB0"
+bright_magenta = "#6A6A9A"
+bright_cyan = "#96B4BA"
+
+# ANSI 0–15
+color0 = "#0C0B10"
+color1 = "#9A4A32"
+color2 = "#5A8A7A"
+color3 = "#C4B48A"
+color4 = "#386385"
+color5 = "#5A5A8A"
+color6 = "#809EA6"
+color7 = "#C4C1B8"
+color8 = "#7A7368"
+color9 = "#B86248"
+color10 = "#6A9A8A"
+color11 = "#D4C49A"
+color12 = "#4A8AB0"
+color13 = "#6A6A9A"
+color14 = "#96B4BA"
+color15 = "#E4E0D6"
+
+# Focus jewelry — solid temper blue
+hyprland_active_border = "#4A8AB0"

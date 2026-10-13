@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yakiiro forge strike</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #14131A; }
+  .sheet {
+    width: 1500px;
+    height: 440px;
+    background: #14131A;
+    color: #E4E0D6;
+    padding: 32px 40px 28px;
+    font-family: "Noto Sans", "Liberation Sans", sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 26px;
+  }
+  h1 {
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 34px;
+    font-weight: 560;
+    letter-spacing: 0.04em;
+  }
+  header p {
+    font-family: "Liberation Mono", monospace;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: #7A7368;
+  }
+  .frames {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+  }
+  .frame {
+    background: #0C0B10;
+    border-radius: 6px;
+    padding: 22px 22px 18px;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 1px #221F2A;
+  }
+  .step {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    color: #4A8AB0;
+  }
+  .time {
+    margin-top: 6px;
+    font-family: "Liberation Mono", monospace;
+    font-size: 13px;
+    color: #7A7368;
+  }
+  .sample {
+    margin-top: 18px;
+    background: #14131A;
+    border-radius: 4px;
+    padding: 18px 18px 16px;
+    min-height: 0;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 28px;
+    line-height: 1.45;
+  }
+  .sample .h { display: block; font-weight: 700; }
+  .sample .s { display: block; margin-top: 8px; font-size: 22px; }
+  .sample .c {
+    display: inline-block;
+    margin-top: 8px;
+    font-family: "Liberation Mono", monospace;
+    font-size: 18px;
+    padding: 0 6px;
+  }
+  .cap {
+    margin-top: auto;
+    padding-top: 18px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #C4C1B8;
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <header>
+      <h1>Forge strike</h1>
+      <p>:wq · :x · ZZ · markdown</p>
+    </header>
+    <div class="frames">
+      <article class="frame">
+        <p class="step">01 IMPACT</p>
+        <p class="time">40ms</p>
+        <div class="sample">
+          <span class="h" style="color:#E4E0D6"># Heat the coupon</span>
+          <span class="s" style="color:#E4E0D6">struck</span>
+          <span class="c" style="color:#E4E0D6">anvil</span>
+        </div>
+        <p class="cap">Every markdown group goes white-hot. The window knocks one line.</p>
+      </article>
+      <article class="frame">
+        <p class="step">02 SCATTER</p>
+        <p class="time">140ms</p>
+        <div class="sample">
+          <span class="h" style="color:#D4C49A"># Heat the coupon</span>
+          <span class="s" style="color:#B86248">struck</span>
+          <span class="c" style="color:#5A8A7A">anvil</span>
+        </div>
+        <p class="cap">Each group takes its own temper color. The knock reverses.</p>
+      </article>
+      <article class="frame">
+        <p class="step">03 RESTORED</p>
+        <p class="time">80ms</p>
+        <div class="sample">
+          <span class="h" style="color:#C4C1B8"># Heat the coupon</span>
+          <span class="s" style="color:#C4C1B8">struck</span>
+          <span class="c" style="color:#C4C1B8">anvil</span>
+        </div>
+        <p class="cap">Highlights return to the colorscheme that was there before the strike.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yakiiro</title>
+<style>
+  @font-face {
+    font-family: "Yakiiro JP";
+    src: url("__YAKIIRO_JP__") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #08070A; }
+  .banner {
+    width: 1600px;
+    height: 680px;
+    display: grid;
+    grid-template-columns: 740px 860px;
+    grid-template-rows: 1fr 92px;
+    background: #08070A;
+    color: #E4E0D6;
+    position: relative;
+    overflow: hidden;
+    font-family: "Noto Sans", "Liberation Sans", sans-serif;
+  }
+  .rule {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: #4A8AB0;
+    z-index: 3;
+  }
+  .copy {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 72px 36px 12px 72px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.46em;
+    color: #7A7368;
+  }
+  h1 {
+    margin-top: 28px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-weight: 560;
+    font-size: 108px;
+    line-height: 0.88;
+    letter-spacing: 0.045em;
+    color: #E4E0D6;
+  }
+  .kana {
+    margin-top: 18px;
+    font-family: "Yakiiro JP", serif;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0.28em;
+    color: #C4B48A;
+  }
+  .dek {
+    margin-top: 22px;
+    max-width: 520px;
+    font-family: "Noto Serif", "Liberation Serif", serif;
+    font-size: 24px;
+    line-height: 1.35;
+    color: #C4C1B8;
+  }
+  .chips {
+    margin-top: auto;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chip {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .chip i {
+    display: block;
+    width: 46px;
+    height: 18px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(228, 224, 214, 0.18);
+  }
+  .chip b {
+    display: block;
+    font-size: 14px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    color: #E4E0D6;
+  }
+  .chip span {
+    display: block;
+    margin-top: 1px;
+    font-family: "Liberation Mono", "Noto Sans Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: #7A7368;
+  }
+  .photo {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-image: url("../../backgrounds/2-yakiiro-blade.jpg");
+    background-size: cover;
+    background-position: 58% 42%;
+    position: relative;
+  }
+  .photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      #08070A 0%,
+      rgba(8, 7, 10, 0.72) 12%,
+      rgba(8, 7, 10, 0.08) 38%,
+      rgba(8, 7, 10, 0) 58%);
+  }
+  .bar {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+    padding: 14px 36px 26px 72px;
+    z-index: 2;
+  }
+  .swatch {
+    height: 42px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(228, 224, 214, 0.14);
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="rule"></div>
+    <div class="copy">
+      <p class="eyebrow">OMARCHY THEME</p>
+      <h1>YAKIIRO</h1>
+      <p class="kana">焼き色</p>
+      <p class="dek">Temper colors of steel. A dark forge for the shop floor.</p>
+      <div class="chips">
+        <div class="chip"><i style="background:#4A8AB0"></i><div><b>590°F temper blue</b><span>#4A8AB0 · accent</span></div></div>
+        <div class="chip"><i style="background:#C4B48A"></i><div><b>350°F pale straw</b><span>#C4B48A · body heat</span></div></div>
+        <div class="chip"><i style="background:#9A4A32"></i><div><b>oxide</b><span>#9A4A32 · hot brown</span></div></div>
+      </div>
+    </div>
+    <div class="photo"></div>
+    <div class="bar">
+      <div class="swatch" style="background:#9A4A32"></div>
+      <div class="swatch" style="background:#B86248"></div>
+      <div class="swatch" style="background:#C4B48A"></div>
+      <div class="swatch" style="background:#D4C49A"></div>
+      <div class="swatch" style="background:#5A8A7A"></div>
+      <div class="swatch" style="background:#4A8AB0"></div>
+      <div class="swatch" style="background:#386385"></div>
+      <div class="swatch" style="background:#809EA6"></div>
+    </div>
+  </div>
+</body>
+</html>
